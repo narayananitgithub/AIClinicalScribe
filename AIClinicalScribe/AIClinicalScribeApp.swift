@@ -11,7 +11,7 @@ import SwiftUI
 struct AIClinicalScribeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RecordingView()
         }
     }
 }

@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		86C05C502E2106ED00D0A65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C05C4F2E2106ED00D0A65F /* Assets.xcassets */; };
+		86C05C782E21081A00D0A65F /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C05C772E21081A00D0A65F /* RecordingView.swift */; };
+		86C05C7B2E21090400D0A65F /* RecordingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C05C7A2E21090400D0A65F /* RecordingsListView.swift */; };
+		86C05C7E2E210A2500D0A65F /* RecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C05C7D2E210A2200D0A65F /* RecordingViewModel.swift */; };
+		86C7C04B2E214AB7005B5A15 /* RecordingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C7C04A2E214AAB005B5A15 /* RecordingStorage.swift */; };
+		86C7C04D2E2167F4005B5A15 /* AudioWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C7C04C2E2167F4005B5A15 /* AudioWaveView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		86C05C562E2106ED00D0A65F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -25,11 +34,23 @@
 
 /* Begin PBXFileReference section */
 		86C05C482E2106EB00D0A65F /* AIClinicalScribe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIClinicalScribe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C05C4F2E2106ED00D0A65F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86C05C552E2106ED00D0A65F /* AIClinicalScribeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIClinicalScribeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C05C5F2E2106ED00D0A65F /* AIClinicalScribeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIClinicalScribeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C05C752E21076E00D0A65F /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		86C05C772E21081A00D0A65F /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		86C05C7A2E21090400D0A65F /* RecordingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsListView.swift; sourceTree = "<group>"; };
+		86C05C7D2E210A2200D0A65F /* RecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewModel.swift; sourceTree = "<group>"; };
+		86C7C04A2E214AAB005B5A15 /* RecordingStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingStorage.swift; sourceTree = "<group>"; };
+		86C7C04C2E2167F4005B5A15 /* AudioWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioWaveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		860C9DE62E21FAA8004A9618 /* SourceFile */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SourceFile;
+			sourceTree = "<group>";
+		};
 		86C05C4A2E2106EB00D0A65F /* AIClinicalScribe */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AIClinicalScribe;
@@ -75,6 +96,9 @@
 		86C05C3F2E2106EB00D0A65F = {
 			isa = PBXGroup;
 			children = (
+				860C9DE62E21FAA8004A9618 /* SourceFile */,
+				86C05C732E21071A00D0A65F /* UI */,
+				86C05C722E21070300D0A65F /* Assets */,
 				86C05C4A2E2106EB00D0A65F /* AIClinicalScribe */,
 				86C05C582E2106ED00D0A65F /* AIClinicalScribeTests */,
 				86C05C622E2106ED00D0A65F /* AIClinicalScribeUITests */,
@@ -90,6 +114,59 @@
 				86C05C5F2E2106ED00D0A65F /* AIClinicalScribeUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		86C05C722E21070300D0A65F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				86C05C4F2E2106ED00D0A65F /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		86C05C732E21071A00D0A65F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				86C05C762E2107EF00D0A65F /* Record */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		86C05C742E21076400D0A65F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86C05C752E21076E00D0A65F /* Recording.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86C05C762E2107EF00D0A65F /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				86C05C742E21076400D0A65F /* Model */,
+				86C05C7C2E21093200D0A65F /* ViewModel */,
+				86C05C792E21089300D0A65F /* View */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		86C05C792E21089300D0A65F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86C05C772E21081A00D0A65F /* RecordingView.swift */,
+				86C05C7A2E21090400D0A65F /* RecordingsListView.swift */,
+				86C7C04A2E214AAB005B5A15 /* RecordingStorage.swift */,
+				86C7C04C2E2167F4005B5A15 /* AudioWaveView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86C05C7C2E21093200D0A65F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				86C05C7D2E210A2200D0A65F /* RecordingViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +185,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				860C9DE62E21FAA8004A9618 /* SourceFile */,
 				86C05C4A2E2106EB00D0A65F /* AIClinicalScribe */,
 			);
 			name = AIClinicalScribe;
@@ -212,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C05C502E2106ED00D0A65F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C7C04D2E2167F4005B5A15 /* AudioWaveView.swift in Sources */,
+				86C05C7E2E210A2500D0A65F /* RecordingViewModel.swift in Sources */,
+				86C7C04B2E214AB7005B5A15 /* RecordingStorage.swift in Sources */,
+				86C05C7B2E21090400D0A65F /* RecordingsListView.swift in Sources */,
+				86C05C782E21081A00D0A65F /* RecordingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
